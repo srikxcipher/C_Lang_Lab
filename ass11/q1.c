@@ -14,7 +14,7 @@ int main()
     struct shmid_ds s;   // Declare the shared memory info structure
     key_t key;
     
-    key = ftok("p.c", 20); // Generate a key
+    key = ftok(".", 20); // Generate a key
     printf("key=%#X\n", key);
     
     // Create a shared memory segment with size of int (4 bytes)
